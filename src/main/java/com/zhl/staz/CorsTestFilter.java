@@ -18,10 +18,10 @@ public class CorsTestFilter extends HttpFilter {
 
     @Override
     public void doFilter(HttpServletRequest servletRequest, HttpServletResponse servletResponse, FilterChain filterChain) throws IOException, ServletException {
-        servletResponse.addHeader(HttpHeaders.ACCESS_CONTROL_ALLOW_ORIGIN,"*");
-        servletResponse.addHeader(HttpHeaders.ACCESS_CONTROL_ALLOW_METHODS,"*");
-        servletResponse.addHeader(HttpHeaders.ACCESS_CONTROL_ALLOW_HEADERS,"*");
-        servletResponse.addHeader(HttpHeaders.ACCESS_CONTROL_MAX_AGE,"5");
+//        servletResponse.addHeader(HttpHeaders.ACCESS_CONTROL_ALLOW_ORIGIN,"*");
+//        servletResponse.addHeader(HttpHeaders.ACCESS_CONTROL_ALLOW_METHODS,"*");
+//        servletResponse.addHeader(HttpHeaders.ACCESS_CONTROL_ALLOW_HEADERS,"*");
+//        servletResponse.addHeader(HttpHeaders.ACCESS_CONTROL_MAX_AGE,"5");
         filterChain.doFilter(servletRequest,servletResponse);
     }
 }
